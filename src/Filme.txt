@@ -1,0 +1,78 @@
+Name: Pixels
+Regie: Chris Columbus
+Besetzung: Adam Sandler, Kevin James, Josh Gad, Kevin James
+Autor: Timothy Dowling, Tim Herlihy
+Jahr: 2015
+Beschreibung: Als Aliens im Stil alter Videospiele die Erde angreifen, treten der Präsident und seine Kindheitsfreunde (ehemalige Videospielfanatiker) in Aktion.
+
+Name: Kingsman The Golden Circle
+Regie: Matthew Vaughn
+Besetzung: Colin Firth, Julianne Moore, Taron Egerton, Mark Strong
+Autor: Jane Goldman, Matthew Vaughn
+Jahr: 2017
+Beschreibung: In der Fortsetzung zu "Kingsman: The Secret Service" bitten Eggsy und Merlin nach einem Agriff auf ihre Behörde ihre amerikanischen Kollegen um Hilfe.
+
+Name: Greatest Showman
+Regie: Michael Gracey
+Besetzung: Hugh Jackman, Michelle Williams, Zac Efron, Zendaya
+Autor: Jenny Bicks, Bill Condon
+Jahr: 2017
+Beschreibung: Diese Filmbiografie erzählt die Geschichte des dreisten, doch geschäftstüchtigen P.T. Barnum, der die größte Show auf die Beine stellt, die die Welt je gesehen hat. 
+
+Name: Jurassic World
+Regie: Colin Trevorrow
+Besetzung: Chris Pratt, Bryce Dallas Howard, Ty Simpkins, Nick Robinson
+Autor: Rick Jaffa, Amanda Silver, Colin Trevorrow
+Jahr: 2015
+Beschreibung: Die Betreiber eines Dinosaurier-Parks wollen mit einem furchterregenden neuen Exemplar Besucher anlocken, doch als einer der tödlichen Riesen entkommt, bricht Panik aus. 
+
+Name: Mord im Orient Express
+Regie: Kenneth Branagh
+Besetzung: Kenneth Branagh, Penélope Cruz, Judi Dench, Johnny Depp
+Autor: Michael Green
+Jahr: 2017
+Beschreibung: Der weltberühmte Detektiv Hercule Poirot übernimmt in dieser Verfilmung des Krimis von Agatha Christie einen Mordfall im legendären Orient Express.
+
+Name:Tatortreiniger
+Regie: Arne Feldhusen
+Besetzung: Bjarne Mädel
+Autor: 
+Jahr: 2017
+Beschreibung: Comedy-Serie über die Erlebnisse eines Tatortreinigers, der seine schmutzige Arbeit erst beginnen kann, wenn die Polizei die Tatortanalyse abgeschlossen hat.
+
+Name: Fatherhood
+Regie: Paul Weitz
+Besetzung: Kevin Hart, Alfre Woodard, Lil Rel Howery, DeWanda Wise
+Autor: Dana Stevens, Paul Weitz
+Jahr: 2021
+Beschreibung: In diesem Drama nach einer wahren Begebenheit muss ein jüngst verwitweter Vater Zweifel, Ängste, Leid und schmutzige Windeln unverhofft ganz allein meistern.
+
+Name:Joker
+Regie: Todd Phillips
+Besetzung: Joaquin Ohoenix, Robert De Niro, Zazie Beetz
+Autor: Todd Phillips, Scott Silver
+Jahr: 2019
+Beschreibung: Ein psychisch kranker Komiker kämpft 1981 in Gotham City darum, gesehen zu werden. Als er sich gegen Angreifer zur Wehr setzen muss, wendet sich sein Leben zum Bösen.
+
+Name: The Darkest Minds
+Regie: Jennifer Yuh Nelson
+Besetzung: Amandla Stenberg, Harris Dickinson, Mandy Moore, Skylan Brooks
+Autor: Chad Hodge
+Jahr: 2018
+Beschreibung: Die Regierung sperrt Kinder mit übermenschlichen Fähigkeiten ein. Doch dann lehnen sich einige Jugendliche mit Superkräften im Freiheitskampf gegen ihre Unterdrücker auf.
+
+Name: Spiderman Far From Home
+Regie: Jon Watts
+Besetzung: Tom Holland, Zendaya, Samuel L. Jackson, Jake Gyllenhaal
+Autor: Chris McKenna, Erik Sommers
+Jahr: 2019
+Beschreibung: Auch Superhelden brauchen gelegentlich Urlaub. Doch aufgrund einer neuen Bedrohung muss Peter Parker sogar bei einer Klassenfahrt nach Europa den Helden spielen.
+
+Name: Ruhet in Frieden
+Regie: Scott Frank
+Besetzung: Adam David Thompsonn Liam Neeson, Mark Consuelos, Danielle Rose Russell
+Autor: 
+Jahr: 2014
+Beschreibung: Ein Drogenbaron engagiert einen aufgewühlten Ex-Cop, um die Killer seiner Frau zu finden. Eine Jagd, die in New Yorks Unterwelt zu schockierenden Enthüllungen führt.
+
+
