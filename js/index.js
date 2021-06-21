@@ -6,6 +6,17 @@ function Movie(director, year, actors, description, url) {
     this.url = url;
 }
 
+function MovieList(name, movies){
+    this.name = name;
+    this. movies = movies;
+}
+
+function Page(name, lists){
+    this.name = name;
+    this.lists = lists;
+}
+
+
 function NetflixViewModel() {
     this.newMovies = ko.observableArray([
         new Movie("John", 2003, ["Luke", "Sam", "Sarah"], "Luke, Sam und Sarah gehen auf die gleiche Schule. Nach 20 Jahren treffen sie sich wieder bei einem Klassentreffen.", "img/placeholder.png"),
