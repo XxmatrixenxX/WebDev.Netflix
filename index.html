@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+
+    <div class="container-main">
+        <h1>Netflix</h1>
+
+        <h2>Neue Filme</h2>
+        <div class="container-movies" data-bind="foreach: newMovies">
+            <img class="movie-image" data-bind="attr:{src: url}">
+        </div>
+
+        <h2>Derzeit beliebt</h2>
+        <div class="container-movies" data-bind="foreach: popularMovies">
+            <img class="movie-image" data-bind="attr:{src: url}">
+        </div>
+
+        <h2>Nochmal ansehen</h2>
+        <div class="container-movies" data-bind="foreach: watchedMovies">
+            <img class="movie-image" data-bind="attr:{src: url}">
+        </div>
+
+    </div>
+
+    <script type='text/javascript' src='js/knockout-3.5.1.js'></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>

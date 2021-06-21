@@ -1,0 +1,14 @@
+body {
+    background-color: rgba(0, 0, 0, 0.795);
+    font-family: Roboto, sans-serif;
+    color: white;
+}
+
+.movie-image {
+    width: 320px;
+    height: 180;
+}
+
+.container-movies {
+    display: inline;
+}
