@@ -17,38 +17,84 @@
             <a class="navbar-brand" href="#">
                 <img src="img/netflix_icon.png" alt="" width="30" height="30" class="d-inline-block align-top">
                 Netflix
-              </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-            </ul>
-          </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </nav>
+    </nav>
 
-    <div class="container-main">
+    <section class="" data-bind="foreach: page.lists">
 
-        <h2>Neue Filme</h2>
-        <div class="container-movies" data-bind="foreach: newMovies">
-            <img class="movie-image" data-bind="attr:{src: url}">
+        <h2 data-bind="text: name"></h2>
+        <div class="my-5">
+            <!-- Carousel wrapper -->
+            <div data-bind="attr: { id: 'movies-' + $index() }" class="carousel slide" data-bs-ride="carousel">
+
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bind="attr: { 'data-bs-target': '#movies-' + $index() }" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bind="attr: { 'data-bs-target': '#movies-' + $index() }" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+                <!-- Inner -->
+                <div class="carousel-inner py-4">
+                    
+                    <!-- Single item -->
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <div class="d-flex container-movies justify-content-between" data-bind="foreach: movies">
+                                <div class="">
+                                        <img class="movie-image" data-bind="attr:{src: url}">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Single item -->
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="d-flex container-movies justify-content-between" data-bind="foreach: movies">
+                                <div class="">
+                                        <img class="movie-image" data-bind="attr:{src: url}">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Single item -->
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="d-flex container-movies justify-content-between" data-bind="foreach: movies">
+                                <div class="">
+                                        <img class="movie-image" data-bind="attr:{src: url}">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Inner -->
+            </div>
+            <!-- Carousel wrapper -->
         </div>
 
-        <h2>Derzeit beliebt</h2>
-        <div class="container-movies" data-bind="foreach: popularMovies">
-            <img class="movie-image" data-bind="attr:{src: url}">
-        </div>
-
-        <h2>Nochmal ansehen</h2>
-        <div class="container-movies" data-bind="foreach: watchedMovies">
-            <img class="movie-image" data-bind="attr:{src: url}">
-        </div>
-
-    </div>
+    </section>
 
     <script type='text/javascript' src='js/bootstrap.min.js'></script>
     <script type='text/javascript' src='js/knockout-3.5.1.js'></script>
