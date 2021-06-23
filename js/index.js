@@ -1,19 +1,51 @@
-function Movie(director, year, actors, description, url) {
+function Movie(name, director, year, actors, description, url) {
+    this.name = name;
     this.director = director;
     this.year = year;
     this.actors = actors;
     this.description = description;
     this.url = url;
+    var self = this;
+
+    //Operation
+    self.getMovie = function(){
+        var director = self.director;
+        var year = self.year;
+        var actors = self.actors;
+        var description = self.description;
+        var name = self.name;
+        return director, year, actors, description, name;
+    }
+
+    self.goToMovie = function(movie) { self.chosenMovie(movie);
+        $.get('/movie', { movie: movie }, self.chosenMovieData); };
+
+    self.goToPage = function(page) {
+            self.Page(page);
+            self.chosenMovieData(null); // Stop showing a Movie
+            $.get("/Page", { page: üage }, self.page);
+        };
 }
 
 function MovieList(name, movies){
     this.name = name;
     this.movies = ko.observableArray(movies);
+    var self = this;
+
+    self.getMovies = function(){
+        var movies = self.movies;
+        return movies;
+    }
+
+    self.addMovieToList = function(movie){
+        self.movies.push(movie);
+    }
 }
 
 function Page(name, lists){
     this.name = name;
     this.lists = lists;
+    var self = this;
 }
 
 
