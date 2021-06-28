@@ -38,7 +38,7 @@
         <h2 data-bind="text: name"></h2>
         <div class="my-5">
             <!-- Carousel wrapper -->
-            <div data-bind="attr: { id: 'movies-' + $index() }" class="carousel slide" data-bs-ride="carousel">
+            <div data-bind="attr: { id: 'movies-' + $index() }" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
 
                 <!-- Controls -->
                 <button class="carousel-control-prev" type="button" data-bind="attr: { 'data-bs-target': '#movies-' + $index() }" data-bs-slide="prev">
@@ -50,39 +50,13 @@
                     <span class="visually-hidden">Next</span>
                 </button>
 
+                <button class="container" data-bind="click: addMovieToList">Add another movie</button>
                 <!-- Inner -->
-                <div class="carousel-inner py-4">
-                    
+                <div class="carousel-inner py-4" data-bind="foreach: movieSets">
                     <!-- Single item -->
-                    <div class="carousel-item active">
+                    <div class="carousel-item" data-bind="css: { active: $index() == 0}">
                         <div class="container">
-                            <div class="d-flex container-movies justify-content-between" data-bind="foreach: movies">
-                                <div class="">
-                                        <!--img class="movie-image" data-bind="attr:{src: url}"-->
-                                        <img data-bind="attr: {src: url}" onclick="moviePopup(this)" class="movie-image">
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Single item -->
-                    <div class="carousel-item">
-                        <div class="container">
-                            <div class="d-flex container-movies justify-content-between" data-bind="foreach: movies">
-                                <div class="">
-                                        <!--img class="movie-image" data-bind="attr:{src: url}"-->
-                                        <img data-bind="attr: {src: url}" onclick="moviePopup(this)" class="movie-image">
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Single item -->
-                    <div class="carousel-item">
-                        <div class="container">
-                            <div class="d-flex container-movies justify-content-between" data-bind="foreach: movies">
+                            <div class="d-flex container-movies justify-content-between" data-bind="foreach: $data">
                                 <div class="">
                                         <!--img class="movie-image" data-bind="attr:{src: url}"-->
                                         <img data-bind="attr: {src: url}" onclick="moviePopup(this)" class="movie-image">
