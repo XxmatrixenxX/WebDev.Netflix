@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/moviePage.css">
+
+</head>
+
+<body>
+     <img class="movie-image" data-bind="attr:{src: url}">
+     <div data-bind="text: movie.name"></div>
+     <div data-bind="text: movie.director"></div>
+     <div data-bind="text: movie.actors"></div>
+     <div data-bind="text: movie.autor"></div>
+     <div data-bind="text: movie.year"></div>
+     <div data-bind="text: movie.description"></div>
+
+    <script type='text/javascript' src='js/bootstrap.min.js'></script>
+    <script type='text/javascript' src='js/knockout-3.5.1.js'></script>
+</body>
+
+</html>
