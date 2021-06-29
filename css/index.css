@@ -9,6 +9,10 @@ body {
     height: 180px;
 }
 
+.list-header {
+    font-size: 25px;
+}
+
 .container-movies {
     width: 1250px;
 }
