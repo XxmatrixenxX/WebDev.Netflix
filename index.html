@@ -65,7 +65,7 @@
                             <div data-bind="if: $data">
                                 <div class="mx-1">
                                     <!--img class="movie-image" data-bind="attr:{src: url}"-->
-                                    <img data-bind="attr: {src: url}, event: { mouseover: function(){ $root.selectPreviewMovie($parentContext.$parentContext.$index() + '-' + ($parentContext.$index() * 3 + $index())); } }" onclick="moviePopup(this)" data-bs-toggle="modal"
+                                    <img data-bind="attr: {src: url}, event: { mouseover: function(){ $root.selectPreviewMovie($parentContext.$parentContext.$index() + '-' + ($parentContext.$index() * 3 + $index())); }}, click:  function(){ $root.selectClickedMovie($parentContext.$parentContext.$index() + '-' + ($parentContext.$index() * 3 + $index())); }" data-bs-toggle="modal"
                                         data-bs-target="#exampleModal" class="movie-image rounded-1">
                                 </div>
                             </div>
@@ -94,11 +94,20 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    ...
+
+                    <div class="main-preview" data-bind="with: clickedMovie">
+                    <img data-bind="attr: {src: url}" class="modal-img">
+                    <div>Moviename: <span data-bind="text: name" class="modal-moviename"></span></div>
+                    <div>Director: <span data-bind="text: director" class="modal-director"></span></div>
+                    <div>Year: <span data-bind="text: year" class="modal-year" ></span></div>
+                    <div>Actors: <span data-bind="text: actors" class="modal-actors" ></span></div>
+                    <div>Description: <span data-bind="text: description" class="modal-description" ></span></div>
+                    </div>
+
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+
                 </div>
             </div>
         </div>
