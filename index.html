@@ -33,8 +33,14 @@
         </div>
     </nav>
 
-    <div class="main-preview" data-bind="with: previewMovie">
-        <img data-bind="attr: {src: url}" class="main-image">
+    <div class="preview-main position-relative d-flex mb-5" data-bind="with: previewMovie">
+
+        <div class="preview-content position-relative p-4">
+            <h1 data-bind="text: name"></h1>
+            <p data-bind="text: year + ' - ' + director" class="preview-info"></p>
+            <p data-bind="text: description" class="preview-description"></p>
+        </div>
+        <img data-bind="attr: {src: url}" class="preview-image">
     </div>
 
     <section class="container-xxl position-relative" data-bind="foreach: lists">
@@ -43,7 +49,7 @@
             <h2 class="list-header" data-bind="text: name"></h2>
             <!-- Carousel wrapper -->
             <div data-bind="attr: { id: 'movies-' + $index() }"
-                class="carousel-container carousel slide position-relative shadow" data-bs-ride="carousel"
+                class="carousel-container carousel slide position-relative" data-bs-ride="carousel"
                 data-bs-interval="false">
                 <!-- <button class="container" data-bind="click: addMovieToList">Add another movie</button> -->
 
@@ -64,14 +70,13 @@
                         <div class="d-flex justify-content-center" data-bind="foreach: $data">
                             <div data-bind="if: $data">
                                 <div class="mx-1">
-                                    <!--img class="movie-image" data-bind="attr:{src: url}"-->
-                                    <img data-bind="attr: {src: url}, event: { mouseover: function(){ $root.selectPreviewMovie($parentContext.$parentContext.$index() + '-' + ($parentContext.$index() * 3 + $index())); } }" onclick="moviePopup(this)" data-bs-toggle="modal"
-                                        data-bs-target="#exampleModal" class="movie-image rounded-1">
+                                    <img data-bind="attr: {src: url}, event: { mouseover: function(){ $root.selectPreviewMovie($parentContext.$parentContext.$index() + '-' + ($parentContext.$index() * 3 + $index())); } }"
+                                        onclick="moviePopup(this)" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                        class="movie-image rounded-1">
                                 </div>
                             </div>
                             <div data-bind="if: !$data">
                                 <div class="mx-1">
-                                    <!--img class="movie-image" data-bind="attr:{src: url}"-->
                                     <div class="movie-image"></div>
                                 </div>
                             </div>

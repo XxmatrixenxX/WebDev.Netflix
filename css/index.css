@@ -4,9 +4,20 @@ body {
     color: white;
 }
 
+nav {
+    box-shadow: 3px 3px 4px 2px rgba(0, 0, 0, 0.4);
+}
+
 .movie-image {
     width: 320px;
     height: 180px;
+    transition: box-shadow 0.5s;
+    cursor: pointer;
+}
+
+.movie-image:hover {
+    box-shadow: 3px 3px 4px 2px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.5s;
 }
 
 .list-header {
@@ -30,15 +41,34 @@ body {
 .carousel-container {
     background: #646464;
     border-radius: 5px;
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.3);
 }
 
-.main-preview {
+.preview-main {
     width: 100%;
-    height: 40vh;
+    min-height: 250px;
+    max-height: 600px;
+    box-shadow: 0px 0px 30px 2px rgba(0, 0, 0, 0.7);
 }
 
-.main-image {
-    width: 100%;
-    height: 50vh;
-    position: absolute;
+.preview-main h1 {
+    font-size: 70px;
+}
+
+.preview-image {
+    width: 50%;
+}
+
+.preview-info {
+    font-size: 30px;
+}
+
+.preview-description {
+    font-size: 20px;
+}
+
+.preview-content {
+    width: 50%;
+
+    background-color: #272727;
 }

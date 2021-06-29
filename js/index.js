@@ -40,9 +40,9 @@ function NetflixViewModel() {
     self.newMovies = new MovieList("Neue Filme", [
         new Movie("Pixels", "Chris Columbus", 2015, ["Adam Sandler", "Kevin James", "Kevin James"], "Als Aliens im Stil alter Videospiele die Erde angreifen, treten der Präsident und seine Kindheitsfreunde (ehemalige Videospielfanatiker) in Aktion.", "img/Pixels.webp"),
         new Movie("The Movie","Tom", 2012, ["Tim", "Jim", "Guy"], "Test text, um die Website zu testen. Diese Informationen haben nichts mit dem Film selbst zu tun, es handelt sich lediglich um einen Platzhalter.", "img/Kingsman the Godencircle.webp"),
-        new Movie("The Movie","Tom", 2012, ["Tim", "Jim", "Guy"], "Test text, um die Website zu testen. Diese Informationen haben nichts mit dem Film selbst zu tun, es handelt sich lediglich um einen Platzhalter.", "img/Greates Showman.webp"),
+        new Movie("Greatest Showman","Tom", 2012, ["Tim", "Jim", "Guy"], "Test text, um die Website zu testen. Diese Informationen haben nichts mit dem Film selbst zu tun, es handelt sich lediglich um einen Platzhalter.", "img/Greates Showman.webp"),
         new Movie("The Movie","Tom", 2012, ["Tim", "Jim", "Guy"], "Test text, um die Website zu testen. Diese Informationen haben nichts mit dem Film selbst zu tun, es handelt sich lediglich um einen Platzhalter.", "img/Jurassic World.webp"),
-        new Movie("The Movie","Tom", 2012, ["Tim", "Jim", "Guy"], "Test text, um die Website zu testen. Diese Informationen haben nichts mit dem Film selbst zu tun, es handelt sich lediglich um einen Platzhalter.", "img/Mord in Orientexpress.webp"),
+        new Movie("Mord im Orient Express","Tom", 2012, ["Tim", "Jim", "Guy"], "Test text, um die Website zu testen. Diese Informationen haben nichts mit dem Film selbst zu tun, es handelt sich lediglich um einen Platzhalter.", "img/Mord in Orientexpress.webp"),
         new Movie("The Movie","Tom", 2012, ["Tim", "Jim", "Guy"], "Test text, um die Website zu testen. Diese Informationen haben nichts mit dem Film selbst zu tun, es handelt sich lediglich um einen Platzhalter.", "img/Tatortreiniger.webp"),
         new Movie("The Movie","Tom", 2012, ["Tim", "Jim", "Guy"], "Test text, um die Website zu testen. Diese Informationen haben nichts mit dem Film selbst zu tun, es handelt sich lediglich um einen Platzhalter.", "img/Fatherhood.jpg")
     ]);
