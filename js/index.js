@@ -1,30 +1,12 @@
 function Movie(name, director, year, actors, description, url) {
-    this.name = name;
-    this.director = director;
-    this.year = year;
-    this.actors = actors;
-    this.description = description;
-    this.url = url;
     var self = this;
+    self.name = name;
+    self.director = director;
+    self.year = year;
+    self.actors = actors;
+    self.description = description;
+    self.url = url;
 
-    //Operation
-    self.getMovie = function(){
-        var director = self.director;
-        var year = self.year;
-        var actors = self.actors;
-        var description = self.description;
-        var name = self.name;
-        return director, year, actors, description, name;
-    }
-
-    self.goToMovie = function(movie) { self.chosenMovie(movie);
-        $.get('/movie', { movie: movie }, self.chosenMovieData); };
-
-    self.goToPage = function(page) {
-            self.Page(page);
-            self.chosenMovieData(null); // Stop showing a Movie
-            $.get("/Page", { page: üage }, self.page);
-        };
 }
 
 function MovieList(name, movies){
@@ -51,28 +33,11 @@ function MovieList(name, movies){
         return sets;
     });
 
-    self.getMovies = function(){
-        var movies = self.movies;
-        return movies;
-    }
-
-    self.addMovieToList = function(){
-        self.movies.push(new Movie("The Movie","Tom", 2012, ["Tim", "Jim", "Guy"], "Test text, um die Website zu testen. Diese Informationen haben nichts mit dem Film selbst zu tun, es handelt sich lediglich um einen Platzhalter.", "img/placeholder.png"));
-    }
-    //self.addMovieToList = function(movie){
-    //    self.movies.push(movie);
-    //}
 }
-
-function Page(name, lists){
-    this.name = name;
-    this.lists = lists;
-    var self = this;
-}
-
 
 function NetflixViewModel() {
-    this.newMovies = new MovieList("Neue Filme", [
+    var self = this;
+    self.newMovies = new MovieList("Neue Filme", [
         new Movie("Pixels", "Chris Columbus", 2015, ["Adam Sandler", "Kevin James", "Kevin James"], "Als Aliens im Stil alter Videospiele die Erde angreifen, treten der Präsident und seine Kindheitsfreunde (ehemalige Videospielfanatiker) in Aktion.", "img/Pixels.webp"),
         new Movie("The Movie","Tom", 2012, ["Tim", "Jim", "Guy"], "Test text, um die Website zu testen. Diese Informationen haben nichts mit dem Film selbst zu tun, es handelt sich lediglich um einen Platzhalter.", "img/Kingsman the Godencircle.webp"),
         new Movie("The Movie","Tom", 2012, ["Tim", "Jim", "Guy"], "Test text, um die Website zu testen. Diese Informationen haben nichts mit dem Film selbst zu tun, es handelt sich lediglich um einen Platzhalter.", "img/Greates Showman.webp"),
@@ -81,18 +46,30 @@ function NetflixViewModel() {
         new Movie("The Movie","Tom", 2012, ["Tim", "Jim", "Guy"], "Test text, um die Website zu testen. Diese Informationen haben nichts mit dem Film selbst zu tun, es handelt sich lediglich um einen Platzhalter.", "img/Tatortreiniger.webp"),
         new Movie("The Movie","Tom", 2012, ["Tim", "Jim", "Guy"], "Test text, um die Website zu testen. Diese Informationen haben nichts mit dem Film selbst zu tun, es handelt sich lediglich um einen Platzhalter.", "img/Fatherhood.jpg")
     ]);
-    this.popularMovies = new MovieList("Derzeit beliebt", [
+    self.popularMovies = new MovieList("Derzeit beliebt", [
         new Movie("The Movie","Tom", 2012, ["Tim", "Jim", "Guy"], "Test text, um die Website zu testen. Diese Informationen haben nichts mit dem Film selbst zu tun, es handelt sich lediglich um einen Platzhalter.", "img/placeholder.png"),
         new Movie("The Movie","Tom", 2012, ["Tim", "Jim", "Guy"], "Test text, um die Website zu testen. Diese Informationen haben nichts mit dem Film selbst zu tun, es handelt sich lediglich um einen Platzhalter.", "img/placeholder.png"),
         new Movie("The Movie","Tom", 2012, ["Tim", "Jim", "Guy"], "Test text, um die Website zu testen. Diese Informationen haben nichts mit dem Film selbst zu tun, es handelt sich lediglich um einen Platzhalter.", "img/placeholder.png")
     ]);
-    this.watchedMovies = new MovieList("Nochmal ansehen", [
+    self.watchedMovies = new MovieList("Nochmal ansehen", [
         new Movie("The Movie","Tom", 2012, ["Tim", "Jim", "Guy"], "Test text, um die Website zu testen. Diese Informationen haben nichts mit dem Film selbst zu tun, es handelt sich lediglich um einen Platzhalter.", "img/placeholder.png"),
         new Movie("The Movie","Tom", 2012, ["Tim", "Jim", "Guy"], "Test text, um die Website zu testen. Diese Informationen haben nichts mit dem Film selbst zu tun, es handelt sich lediglich um einen Platzhalter.", "img/placeholder.png"),
         new Movie("The Movie","Tom", 2012, ["Tim", "Jim", "Guy"], "Test text, um die Website zu testen. Diese Informationen haben nichts mit dem Film selbst zu tun, es handelt sich lediglich um einen Platzhalter.", "img/placeholder.png")
     ]);
 
-    this.page = new Page("Netflix", [this.newMovies, this.popularMovies, this.watchedMovies]);
+    self.lists = [self.newMovies, self.popularMovies, self.watchedMovies];
+
+    self.previewMovie = ko.observable();
+
+    self.selectPreviewMovie = function(id) {
+        var listAndMovieID = id.split('-');
+        var list = self.lists[parseInt(listAndMovieID[0])].movies();
+        var movie = list[parseInt(listAndMovieID[1])];
+        self.previewMovie(movie);
+    };
+
+    // Show first movie by default
+    self.selectPreviewMovie("0-0");
 }
 
 ko.applyBindings(new NetflixViewModel());

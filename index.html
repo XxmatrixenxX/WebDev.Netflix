@@ -12,7 +12,7 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="img/netflix_icon.png" alt="" width="30" height="30" class="d-inline-block align-top">
@@ -33,7 +33,11 @@
         </div>
     </nav>
 
-    <section class="container-xxl" data-bind="foreach: page.lists">
+    <div class="main-preview" data-bind="with: previewMovie">
+        <img data-bind="attr: {src: url}" class="main-image">
+    </div>
+
+    <section class="container-xxl position-relative" data-bind="foreach: lists">
 
         <div class="m-4 mb-5 container-movies">
             <h2 class="list-header" data-bind="text: name"></h2>
@@ -61,7 +65,7 @@
                             <div data-bind="if: $data">
                                 <div class="mx-1">
                                     <!--img class="movie-image" data-bind="attr:{src: url}"-->
-                                    <img data-bind="attr: {src: url}" onclick="moviePopup(this)" data-bs-toggle="modal"
+                                    <img data-bind="attr: {src: url}, event: { mouseover: function(){ $root.selectPreviewMovie($parentContext.$parentContext.$index() + '-' + ($parentContext.$index() * 3 + $index())); } }" onclick="moviePopup(this)" data-bs-toggle="modal"
                                         data-bs-target="#exampleModal" class="movie-image rounded-1">
                                 </div>
                             </div>
