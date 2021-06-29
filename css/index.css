@@ -12,3 +12,18 @@ body {
 .container-movies {
     display: inline;
 }
+
+.carousel-arrow {
+  color: white;  
+  font-size: 30px;
+  line-height: 0.8;
+}
+
+.carousel-button {
+    z-index: 1;
+}
+
+.carousel-container {
+    background: #646464;
+    border-radius: 5px;
+}
