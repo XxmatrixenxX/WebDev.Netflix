@@ -42,6 +42,9 @@ function MovieList(name, movies){
                 if(j < self.movies().length) {
                     movieSet.push(self.movies()[j]);
                 }
+                else {
+                    movieSet.push(null);
+                }
             }
             sets.push(movieSet);
         }
