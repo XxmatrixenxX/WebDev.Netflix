@@ -20,6 +20,11 @@ nav {
     transition: box-shadow 0.5s;
 }
 
+.movie-image-placeholder {
+    width: 320px;
+    height: 180px;
+}
+
 .list-header {
     font-size: 25px;
 }
