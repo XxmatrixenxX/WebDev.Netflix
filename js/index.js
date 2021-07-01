@@ -40,8 +40,10 @@ function MovieList(name, movies) {
 
 function NetflixViewModel() {
     var self = this;
+
     // Contains all the new movies
     self.newMovies = new MovieList("Neue Filme", [
+        // >>> Datensatz hier einfügen
         new Movie("Pixels", "Chris Columbus", 2015, ["Adam Sandler", "Kevin James", "Josh Gad"], "Als Aliens im Stil alter Videospiele die Erde angreifen, treten der Präsident und seine Kindheitsfreunde (ehemalige Videospielfanatiker) in Aktion.", "img/Pixels.webp"),
         new Movie("Kingsman The Golden Circle", "Matthew Vaughn", 2017, ["Colin Firth", "Julianne Moore", "Taron Egerton"], "In der Fortsetzung zu 'Kingsman: The Secret Service' bitten Eggsy und Merlin nach einem Agriff auf ihre Behörde ihre amerikanischen Kollegen um Hilfe.", "img/Kingsman the Godencircle.webp"),
         new Movie("Greatest Showman", "Michael Gracey", 2017, ["Hugh Jackman", "Michelle Williams", "Zac Efron"], "Diese Filmbiografie erzählt die Geschichte des dreisten, doch geschäftstüchtigen P.T. Barnum, der die größte Show auf die Beine stellt, die die Welt je gesehen hat.", "img/Greates Showman.webp"),
@@ -50,8 +52,10 @@ function NetflixViewModel() {
         new Movie("Tatortreiniger", "Arne Feldhusen", 2017, ["Bjarne Mädel"], "Comedy-Serie über die Erlebnisse eines Tatortreinigers, der seine schmutzige Arbeit erst beginnen kann, wenn die Polizei die Tatortanalyse abgeschlossen hat.", "img/Tatortreiniger.webp"),
         new Movie("Fatherhood", "Paul Weitz", 2021, ["Kevin Hart", "Alfre Woodard", "Lil Rel Howery"], "In diesem Drama nach einer wahren Begebenheit muss ein jüngst verwitweter Vater Zweifel, Ängste, Leid und schmutzige Windeln unverhofft ganz allein meistern.", "img/Fatherhood.jpg")
     ]);
+
     // Contains all the popular movies
     self.popularMovies = new MovieList("Derzeit beliebt", [
+        // >>> Datensatz hier einfügen
         new Movie("The Darkest Minds", "Jennifer Yuh Nelson", 2018, ["Amandla Stenberg", "Harris Dickinson", "Mandy Moore"], "Die Regierung sperrt Kinder mit übermenschlichen Fähigkeiten ein. Doch dann lehnen sich einige Jugendliche mit Superkräften im Freiheitskampf gegen ihre Unterdrücker auf.", "img/The Darkest Minds.webp"),
         new Movie("Joker", "Todd Phillips", 2019, ["Joaquin Ohoenix", "Robert De Niro", "Zazie Beetz"], "Ein psychisch kranker Komiker kämpft 1981 in Gotham City darum, gesehen zu werden. Als er sich gegen Angreifer zur Wehr setzen muss, wendet sich sein Leben zum Bösen.", "img/Joker.webp"),
         new Movie("Spiderman Far From Home", "Jon Watts", 2019, ["Tom Holland", "Zendaya", "Samuel L. Jackson"], "Auch Superhelden brauchen gelegentlich Urlaub. Doch aufgrund einer neuen Bedrohung muss Peter Parker sogar bei einer Klassenfahrt nach Europa den Helden spielen.", "img/Spiderman Far from Home.webp"),
@@ -60,8 +64,10 @@ function NetflixViewModel() {
         new Movie("Minions", "Kyle Balda", 2015, ["Sandra Bullock", "Jon Hamm", "Michael Keaton"], "Die bananengelben, unverständlichen Handlanger aus „Ich – Einfach unverbesserlich“ sind auch in diesem Vorläufer, in dem ihre Geschichte erzählt wird, die Stars.", "img/Minions.webp"),
         new Movie("It Chapter 2", "Andy Muschietti", 2019, ["Jessica Chastain", "James McAvoy", "Bill Ha"], "27 Jahre nach der Konfrontation mit Pennywise erhält der Club der Verlierer den gefürchteten Anruf: Sie sollen nach Derry zurückkehren und ihre Mission beenden.", "img/It Chapter 2.webp"),
     ]);
+
     // Contains all the watched movies
     self.watchedMovies = new MovieList("Nochmal ansehen", [
+        // >>> Datensatz hier einfügen
         new Movie("Drachenzähmen Leicht Gemacht", "Chris Sanders", 2010, ["Jay Baruchel", "Gerad Butler", "Craig Ferguson"], "Als Sohn eines Wikinger-Anführers muss der schüchterne Hicks der Hüne der III. sich einem Initiationsritus zum Krieger stellen: Er muss einen Drachen töten.", "img/Drachenzähmen.webp"),
         new Movie("Penguins of Madagascar", "Eric Darnelle", 2014, ["Tom McGrath", "Chrisopher Knights", "Chris Miller"], "Die Pinguin-Spione Skipper, Kowalski, Rico und Private wollen zusammen mit den schnittigen Nordwind-Agenten das machthungrige Genie Octavius Brine besiegen.", "img/Pinguin aus Madagaskar.webp"),
         new Movie("Himmelskind", "Patricia Riggen", 2016, ["Jennifer Garner", "Kylie Rogers", "Queen Latifah"], "Die tödliche Krankheit ihrer kleinen Tochter stellt den Glauben von Mutter Christy auf eine harte Probe. Wird sie ihre Tochter und ihr Gottvertrauen retten können?", "img/Himmelskind.webp"),
