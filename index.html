@@ -92,22 +92,21 @@
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content bg-dark">
                 <div class="modal-header bg-dark">
-                    <h5 class="modal-title" id="exampleModalLabel">The Movie</h5>
+                    <h2 class="modal-title" id="exampleModalLabel">Details</h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
 
                     <div class="main-preview" data-bind="with: clickedMovie">
                     <img data-bind="attr: {src: url}" class="modal-img">
-                    <div>Moviename: <span data-bind="text: name" class="modal-moviename"></span></div>
-                    <div>Director: <span data-bind="text: director" class="modal-director"></span></div>
-                    <div>Year: <span data-bind="text: year" class="modal-year" ></span></div>
-                    <div>Actors: <span data-bind="text: actors" class="modal-actors" ></span></div>
-                    <div>Description: <span data-bind="text: description" class="modal-description" ></span></div>
-                    </div>
+                    <div class="modal-moviename"><h4>Moviename: <span data-bind="text: name"></span></h4></div>
+                    <div class="modal-director"><h4>Director: <span data-bind="text: director"></span></h4></div>
+                    <div class="modal-year"><h4>Year: <span data-bind="text: year"></span></h4></div>
+                    <div class="modal-actors"><h4>Actors: <span data-bind="text: actors"></span></h4></div>
+                    <div class="modal-description"><h4>Description: <br/> <span data-bind="text: description"></span></h4></div>
 
                 </div>
                 <div class="modal-footer">
