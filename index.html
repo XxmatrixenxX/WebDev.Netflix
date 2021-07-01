@@ -119,16 +119,20 @@
                             <h4>Erscheinungsjahr<span data-bind="text: year"></span></h4>
                         </div>
                         <div class="modal-info">
-                            <h4>Darsteller<span data-bind="text: actors"></span></h4>
+                            <h4>Darsteller
+                                <div data-bind="foreach: actors">
+                                    <span data-bind="text: $data"></span>
+                                </div>
+                            </h4>
                         </div>
                         <div class="modal-info">
-                            <h4>Kurzbeschreibung<br /> <span data-bind="text: description"></span></h4>
+                            <h4>Kurzbeschreibung<span data-bind="text: description"></span></h4>
                         </div>
                     </div>
 
                     <!-- Modal Footer -->
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zurück</button>
                     </div>
 
                 </div>

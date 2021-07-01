@@ -4,9 +4,7 @@ body {
     color: white;
 }
 
-nav {
-    box-shadow: 3px 3px 4px 2px rgba(0, 0, 0, 0.4);
-}
+/* Movie CSS */
 
 .movie-image {
     width: 320px;
@@ -28,6 +26,8 @@ nav {
 .list-header {
     font-size: 25px;
 }
+
+/* Carousel CSS */
 
 .container-movies {
     width: 1250px;
