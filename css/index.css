@@ -51,6 +51,8 @@ nav {
     box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.3);
 }
 
+/* Movie Preview CSS */
+
 .preview-main {
     width: 100%;
     min-height: 250px;
@@ -80,37 +82,22 @@ nav {
     background-color: #272727;
 }
 
+/* Modal CSS */
+
 .modal-img{
     width: 40%;
-    padding-bottom: 15px;
+    position: absolute;
+    right: 15px;
 }
 
-.modal-moviename{
-    font-size: 24px;
+.modal-info h4{
+    font-size: 22px;
+    font-weight: bold;
     padding-bottom: 5px;
 }
 
-.modal-director{
-    font-size: 24px;
-    padding-bottom: 5px;
+.modal-info span{
+    font-size: 20px;
+    font-weight: normal;
+    display: block;
 }
-
-.modal-actors{
-    font-size: 24px;
-    padding-bottom: 5px;
-}
-
-.modal-year{
-    font-size: 24px;
-    padding-bottom: 5px;
-
-}
-
-.modal-description{
-    font-size: 24px;
-    padding-bottom: 2px;
-}
-
-
-
-
