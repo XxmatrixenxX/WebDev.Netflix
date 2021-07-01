@@ -34,7 +34,8 @@ nav {
 }
 
 .carousel-arrow {
-  color: white;  
+  color: white;
+  background-color: transparent;
   font-size: 30px;
   line-height: 0.8;
 }
@@ -44,6 +45,7 @@ nav {
 }
 
 .carousel-container {
+    color: white;
     background: #646464;
     border-radius: 5px;
     box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.3);
@@ -74,7 +76,7 @@ nav {
 
 .preview-content {
     width: 50%;
-
+    color: white;
     background-color: #272727;
 }
 
